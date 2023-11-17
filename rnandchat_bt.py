@@ -31,7 +31,7 @@ def get_answer_for_question(question: str, knowledge_base: dict) -> str or None:
 
 class ChatBotApp(App):
     def build(self):
-        self.knowledge_base = load_knowledge_base(r'C:\Users\Admin\Desktop\rn2\mente.json') #Ruta donde esta ubicado el archivo JSON
+        self.knowledge_base = load_knowledge_base('mente.json') #Ruta donde esta ubicado el archivo JSON
         self.unanswered_question = None
         self.unanswered_answer = None
         self.banned_words = ["tonto", "tarado", "chela", "jonca", "idiota", "estupido", "chilindrina"]
